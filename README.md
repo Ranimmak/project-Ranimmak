@@ -35,10 +35,15 @@ A piezo buzzer is connected to a GPIO pin to generate sound.
 
 ### Components
 Raspberry Pi Pico
+
 SSD1306 OLED Display (128x64)
+
 Push Buttons
+
 Piezo Buzzer
+
 Breadboard
+
 Jumper Wires
 
 
