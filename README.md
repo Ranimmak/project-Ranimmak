@@ -1,25 +1,41 @@
 # Your Project Name
+PicoGame
 
 | | |
 |-|-|
-|`Author` | Your full name
+|`Author` | Ranim Makhlouf
 
 ## Description
+This project focuses on building a simple retro gaming console using the Raspberry Pi Pico, designed to be assembled on a board. The system demonstrates basic principles of embedded systems and programming by allowing users to create and run simple games. It can be programmed using MicroPython. The project serves as an accessible introduction to electronics and coding, using retro-style games as a practical and engaging way to develop programming skills
 
 ## Motivation
+This project was chosen to combine learning programming with a fun, hands-on application, making the process more engaging and practical
 
 ## Architecture
+The system architecture consists of a Raspberry Pi Pico as the central controller, connected via I2C to a 0.96-inch SSD1306 OLED display (128×64) for graphics output, multiple tactile push buttons for user input, and a 3.3V piezo buzzer for sound feedback, all assembled on a solderless breadboard using jumper (Dupont) wires to interconnect the components.
 
 ### Block diagram
+<img width="1284" height="592" alt="image" src="https://github.com/user-attachments/assets/34356076-f731-490b-a8d4-c99df75fef99" />
+
 
 <!-- Make sure the path to the picture is correct -->
 ![Block Diagram](schematics/block_diagram.png)
 
 ### Schematic
+The Raspberry Pi Pico controls an OLED display, push buttons, and a buzzer.
+The OLED uses I2C (SDA, SCL).
+Buttons are connected to GPIO pins for input.
+The buzzer is connected to a GPIO pin for sound output.
 
 ![Schematic](schematics/kicad_schematic.png)
 
 ### Components
+Raspberry Pi Pico
+SSD1306 OLED Display (128x64)
+Push Buttons
+Piezo Buzzer
+Breadboard
+Jumper Wires
 
 
 <!-- This is just an example, fill in with your actual components -->
@@ -36,6 +52,11 @@
 <!-- This is just an example, fill in the table with your actual components -->
 
 | Library | Description | Usage |
+
+machine → GPIO, I2C, PWM
+ssd1306 → OLED display
+time → delays
+random → game logic
 |---------|-------------|-------|
 | [lib-name1](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
 | [lib-name2](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
