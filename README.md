@@ -18,16 +18,17 @@ The system architecture consists of a Raspberry Pi Pico as the central controlle
 <img width="1284" height="592" alt="image" src="https://github.com/user-attachments/assets/34356076-f731-490b-a8d4-c99df75fef99" />
 
 
-<!-- Make sure the path to the picture is correct -->
-![Block Diagram](schematics/block_diagram.png)
+
 
 ### Schematic
-The Raspberry Pi Pico controls an OLED display, push buttons, and a buzzer.
-The OLED uses I2C (SDA, SCL).
-Buttons are connected to GPIO pins for input.
-The buzzer is connected to a GPIO pin for sound output.
-
-![Schematic](schematics/kicad_schematic.png)
+Raspberry Pi Pico:
+The Raspberry Pi Pico is the main controller of the system.
+OLED Display:
+The SSD1306 OLED display is connected to the Pico using the I2C protocol (SDA, SCL).
+Push Buttons:
+Push buttons are connected to GPIO pins and are used for user input.
+Buzzer:
+A piezo buzzer is connected to a GPIO pin to generate sound.
 
 ### Components
 Raspberry Pi Pico
@@ -38,28 +39,11 @@ Breadboard
 Jumper Wires
 
 
-<!-- This is just an example, fill in with your actual components -->
-
-| Device | Usage | Price |
-|--------|--------|-------|
-| Activ Buzzer | Buzzer | [1.5 RON](https://www.optimusdigital.ro/ro/audio-buzzere/635-buzzer-activ-de-3-v.html?search_query=buzzer&results=61) |
-| Push Button | Button | [1 RON](https://www.optimusdigital.ro/ro/butoane-i-comutatoare/1119-buton-6x6x6.html?search_query=buton&results=222) |
-| Jumper Wires | Connecting components | [7 RON](https://www.optimusdigital.ro/ro/fire-fire-mufate/884-set-fire-tata-tata-40p-10-cm.html?search_query=set+fire&results=110) |
-| Breadboard | Project board | [10 RON](https://www.optimusdigital.ro/ro/prototipare-breadboard-uri/8-breadboard-830-points.html?search_query=breadboard&results=145) |
-
 ### Libraries
-
-<!-- This is just an example, fill in the table with your actual components -->
-
-| Library | Description | Usage |
-
 machine → GPIO, I2C, PWM
 ssd1306 → OLED display
 time → delays
 random → game logic
-|---------|-------------|-------|
-| [lib-name1](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
-| [lib-name2](link-to-lib) | official description of the lib | Used for accesing the peripherals of the microcontroller  |
 
 ## Log
 
