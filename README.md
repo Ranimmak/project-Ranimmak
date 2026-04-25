@@ -23,10 +23,13 @@ The system architecture consists of a Raspberry Pi Pico as the central controlle
 ### Schematic
 Raspberry Pi Pico:
 The Raspberry Pi Pico is the main controller of the system.
+
 OLED Display:
 The SSD1306 OLED display is connected to the Pico using the I2C protocol (SDA, SCL).
+
 Push Buttons:
 Push buttons are connected to GPIO pins and are used for user input.
+
 Buzzer:
 A piezo buzzer is connected to a GPIO pin to generate sound.
 
@@ -41,8 +44,11 @@ Jumper Wires
 
 ### Libraries
 machine → GPIO, I2C, PWM
+
 ssd1306 → OLED display
+
 time → delays
+
 random → game logic
 
 ## Log
